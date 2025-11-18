@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quantum Leap" />
+    <title>Quantum Leap </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">Quantum Leap</div>
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#applications" class="nav-link">Applications</a></li>
+          <li><a href="#technology" class="nav-link">Technology</a></li>
+          <li><a href="#testimonials" class="nav-link">Clients</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-cta" onclick="scrollToSection('contact')">Get Started</button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title fade-in">Unlock Tomorrow with Quantum Intelligence</h1>
+        <p class="hero-subtitle fade-in-delay">Harness the power of Quantum AI through our scalable cloud-based QaaS platform. Transform your business with computational capabilities beyond classical limits.</p>
+        <div class="hero-cta fade-in-delay-2">
+          <button class="btn btn-primary" onclick="scrollToSection('contact')">Request a Consultation</button>
+          <button class="btn btn-secondary" onclick="openBetaForm()">Join Beta Program</button>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Quantum Leap</h2>
+        <div class="about-content">
+          <p class="about-text">
+            At Quantum Leap, we're pioneering the future of enterprise intelligence. Our mission is to democratize quantum computing by bringing Quantum AI to businesses through a scalable, cloud-based QaaS platform.
+          </p>
+          <p class="about-text">
+            We bridge the gap between cutting-edge quantum research and practical business applications, enabling organizations to solve problems that were previously impossible with classical computing.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">1000x</div>
+              <div class="stat-label">Faster Processing</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Enterprise Clients</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">99.9%</div>
+              <div class="stat-label">Uptime SLA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="applications">
+      <div class="container">
+        <h2 class="section-title">Industry Applications</h2>
+        <p class="section-subtitle">Quantum AI is transforming industries with unprecedented computational power</p>
+        <div class="applications-grid">
+          <div class="app-card">
+            <div class="app-icon">⚕️</div>
+            <h3>Medicine & Healthcare</h3>
+            <ul class="app-benefits">
+              <li>Accelerate drug discovery by 100x</li>
+              <li>Predictive diagnostics with quantum precision</li>
+              <li>Personalized treatment optimization</li>
+              <li>Molecular simulation at scale</li>
+            </ul>
+          </div>
+          <div class="app-card">
+            <div class="app-icon">💰</div>
+            <h3>Finance & Banking</h3>
+            <ul class="app-benefits">
+              <li>Real-time portfolio optimization</li>
+              <li>Advanced fraud detection algorithms</li>
+              <li>Risk modeling with quantum accuracy</li>
+              <li>High-frequency trading strategies</li>
+            </ul>
+          </div>
+          <div class="app-card">
+            <div class="app-icon">🚚</div>
+            <h3>Logistics & Supply Chain</h3>
+            <ul class="app-benefits">
+              <li>Dynamic route optimization</li>
+              <li>Supply chain demand forecasting</li>
+              <li>Inventory management automation</li>
+              <li>Real-time logistics coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+      <div class="container">
+        <h2 class="section-title">The QaaS Advantage</h2>
+        <div class="tech-content">
+          <div class="comparison">
+            <div class="comparison-card classical">
+              <h3>Classical AI</h3>
+              <ul>
+                <li>Limited to binary processing</li>
+                <li>Sequential computation</li>
+                <li>Exponential time complexity</li>
+                <li>Hardware constraints</li>
+              </ul>
+            </div>
+            <div class="comparison-divider">
+              <span>VS</span>
+            </div>
+            <div class="comparison-card quantum">
+              <h3>Quantum AI</h3>
+              <ul>
+                <li>Superposition & entanglement</li>
+                <li>Parallel universe processing</li>
+                <li>Polynomial time solutions</li>
+                <li>Exponential scalability</li>
+              </ul>
+            </div>
+          </div>
+          <div class="qaas-benefits">
+            <h3>Why QaaS?</h3>
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <span class="benefit-icon">☁️</span>
+                <h4>Cloud-Native</h4>
+                <p>No quantum hardware investment required</p>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">⚡</span>
+                <h4>Instant Scaling</h4>
+                <p>Scale from prototype to production instantly</p>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🔒</span>
+                <h4>Enterprise Security</h4>
+                <p>Bank-grade encryption and compliance</p>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🎯</span>
+                <h4>Easy Integration</h4>
+                <p>Simple APIs, comprehensive documentation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"Quantum Leap's QaaS platform reduced our drug discovery timeline from 5 years to 6 months. The ROI is unprecedented."</div>
+            <div class="testimonial-author">
+              <strong>Dr. Sarah Chen</strong>
+              <span>Chief Science Officer, BioNova Therapeutics</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"Our fraud detection accuracy improved by 47% within the first quarter. Quantum AI is a game-changer for fintech."</div>
+            <div class="testimonial-author">
+              <strong>Michael Rodriguez</strong>
+              <span>VP of Technology, Horizon Financial</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"We optimized our global supply chain and cut costs by $12M annually. The quantum advantage is real and measurable."</div>
+            <div class="testimonial-author">
+              <strong>Jennifer Wu</strong>
+              <span>COO, GlobalTech Logistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Partner With Quantum Leap</h2>
+        <p>Join the quantum revolution. Transform your business with AI that thinks beyond limits.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary large" onclick="scrollToSection('contact')">Request a Consultation</button>
+          <button class="btn btn-secondary large" onclick="openBetaForm()">Join Beta Program</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Ready to harness quantum intelligence? Let's start the conversation.</p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" name="company" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Quantum Leap</h3>
+            <p>Pioneering Quantum AI as a Service for the enterprise.</p>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+              <a href="#" aria-label="GitHub">gh</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#technology">Technology</a></li>
+              <li><a href="#testimonials">Case Studies</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Quantum Leap. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Beta Program Modal -->
+    <div id="beta-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>Join Our Beta Program</h2>
+        <p>Be among the first to experience the quantum advantage.</p>
+        <form id="beta-form">
+          <div class="form-group">
+            <label for="beta-name">Full Name *</label>
+            <input type="text" id="beta-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="beta-email">Email Address *</label>
+            <input type="email" id="beta-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="beta-company">Company Name *</label>
+            <input type="text" id="beta-company" name="company" required>
+          </div>
+          <div class="form-group">
+            <label for="beta-industry">Industry *</label>
+            <select id="beta-industry" name="industry" required>
+              <option value="">Select your industry</option>
+              <option value="healthcare">Healthcare & Medicine</option>
+              <option value="finance">Finance & Banking</option>
+              <option value="logistics">Logistics & Supply Chain</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Apply for Beta</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+  </body>
+</html>
